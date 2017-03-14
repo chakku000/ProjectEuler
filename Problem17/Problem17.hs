@@ -44,4 +44,4 @@ parse n
     b = ((n `div` 10) `mod` 10)*10
     c = (n `div` 100) `mod` 10
 
-main = print $ sum $ map (\x -> length x) $ map parse [1..1000]
+main = print $ sum $ map length $ map parse [1..1000]
